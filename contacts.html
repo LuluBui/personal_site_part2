@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacts Page</title>
     <link rel="stylesheet" href="style.css" />
     <script src="javascript.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
       <ul class="navitems">
         <li><a href="index.html">HOME</a></li>
@@ -16,9 +16,65 @@
         <li>CONTACTS</li>
       </ul>
     </nav>
-    
-    <br/>
-    <br/>
+
+    <br />
+    <br />
     <h1>Contact Me!</h1>
-</body>
+    <form action="submitted.html" class="flex">
+      <fieldset class="flex vertical">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" />
+        <p>invisible</p>
+        <label for="dob">Your Date of Birth</label>
+        <input type="date" name="dob" id="dob" />
+      </fieldset>
+      <fieldset class="flex vertical">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" />
+        <p>invisible</p>
+        <label for="phone">Your Phone Number:</label>
+        <input type="number" name="phone" id="phone" />
+        <p>invisible</p>
+        <label>Your Prefered Choice for Contact:</label>
+        <div>
+          <input type="radio" name="choice" id="emailchoice" />
+          <label for="emailchoice">Email</label>
+        </div>
+        <div>
+          <input type="radio" name="choice" id="phonechoice" />
+          <label for="phonechoice">Phone</label>
+        </div>
+      </fieldset>
+      <fieldset class="flex vertical">
+        <div>
+          <input type="checkbox" name="signup" id="signup" />
+          <label for="signup">Sign up?</label>
+        </div>
+        <p>invisible</p>
+        <label for="password">Your Password:</label>
+        <input type="password" name="password" id="password" />
+      </fieldset>
+      <fieldset class="flex vertical">
+        <label for="rating">How Much Did You Enjoy My Site?</label>
+        <select id="rating" name="rating">
+          <option value="">(select one)</option>
+          <option value="1">I Loved It!!</option>
+          <option value="2">I Liked It!</option>
+          <option value="3">Eh</option>
+          <option value="4">I don't like</option>
+          <option value="5">I Hate It!!</option>
+        </select>
+        <p>invisible</p>
+        <label for="misc">Any more information you would like to add?</label>
+        <textarea
+          id="misc"
+          name="misc"
+          rows="6"
+          cols="30"
+          placeholder="Nope I'm good!!!"
+        ></textarea>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
 </html>
