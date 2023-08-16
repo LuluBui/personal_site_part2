@@ -8,6 +8,7 @@
     <script src="javascript.js"></script>
   </head>
   <body>
+
     <nav>
       <ul class="navitems">
         <li><a href="index.html">HOME</a></li>
@@ -17,10 +18,12 @@
       </ul>
     </nav>
 
-    <br />
-    <br />
+    <!-- empty class use to position first heading after navbar -->
+    <div class="empty"></div>
     <h1>Contact Me!</h1>
-    <form action="submitted.html" class="flex">
+    <form action="submitted.html" class="flex" style="flex-direction: row;">
+
+      <!-- input category: basic info -->
       <fieldset class="flex vertical">
         <label for="name">Your Name:</label>
         <input type="text" name="name" id="name" />
@@ -28,6 +31,8 @@
         <label for="dob">Your Date of Birth</label>
         <input type="date" name="dob" id="dob" />
       </fieldset>
+
+      <!-- input category: contact info -->
       <fieldset class="flex vertical">
         <label for="email">Your Email:</label>
         <input type="email" name="email" id="email" />
@@ -45,6 +50,8 @@
           <label for="phonechoice">Phone</label>
         </div>
       </fieldset>
+
+      <!-- input category: signup info -->
       <fieldset class="flex vertical">
         <div>
           <input type="checkbox" name="signup" id="signup" />
@@ -54,6 +61,8 @@
         <label for="password">Your Password:</label>
         <input type="password" name="password" id="password" />
       </fieldset>
+
+      <!-- input category: feedback info -->
       <fieldset class="flex vertical">
         <label for="rating">How Much Did You Enjoy My Site?</label>
         <select id="rating" name="rating">
@@ -74,6 +83,7 @@
           placeholder="Nope I'm good!!!"
         ></textarea>
       </fieldset>
+
       <input type="submit" value="Submit" id="submit" />
     </form>
   </body>
